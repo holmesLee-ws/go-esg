@@ -13,7 +13,7 @@ const read = (p) => readFileSync(join(root, p), "utf8").replace(/\r\n/g, "\n");
 
 const LEVELS = ["Explain", "Apply", "Evaluate", "Develop"];
 const FIELDS = ["선수", "핵심 질문", "목표", "만들어 볼 것", "국내 근거", "글로벌 비교"];
-const BOUNDARY_AREAS = ["go-compliance-and-legal", "go-strategy", "go-accounting", "go-control", "go-finance", "go-valuation", "go-hr", "go-operations", "go-marketing", "go-scm", "go-security"];
+const BOUNDARY_AREAS = ["go-compliance-and-legal", "go-strategy", "go-accounting", "go-control", "go-finance", "go-valuation", "go-hr", "go-hse", "go-marketing", "go-scm", "go-security"];
 const ALLOWED_HOSTS = ["go.kr", "kasb.or.kr", "krx.co.kr", "korea.kr", "ifrs.org", "efrag.org", "europa.eu", "ghgprotocol.org", "globalreporting.org", "oecd.org", "sec.gov", "ca.gov", "sciencebasedtargets.org", "tnfd.global", "iso.org", "unfccc.int", "fsb-tcfd.org", "ohchr.org", "iaasb.org"];
 
 const usedKeys = new Set();
