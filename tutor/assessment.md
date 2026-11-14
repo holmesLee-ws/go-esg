@@ -61,7 +61,7 @@ go-* 시리즈 공통의 네 수준을 쓴다(go-develop이 쓴 CS2023 숙련 �
 
 ## 기록 형식
 
-`learner/state.json`의 `modules`에 모듈 id를 키로 둔다.
+`learner/state.json`의 `modules`에 모듈 id를 키로 둔다. 상태를 바꿀 때는 Read로 읽은 뒤 기존 `modules.<id>` 항목 전체를 교체한다. 같은 id 키를 새로 덧붙이지 않고, 고친 뒤 같은 id가 두 번 있지 않은지 확인한다.
 
 ```json
 "C2": {

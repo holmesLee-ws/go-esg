@@ -37,4 +37,4 @@
 
 ## 기록
 
-판단이 바뀌면 `learner/state.json`의 `pace`를 고친다. `read`는 `flow`, `too_fast`, `needs_more`, `bored_or_ready`, `stuck` 중 하나다(처음 값 `unknown`은 판단 전을 뜻한다). `evidence`에는 그렇게 본 근거를 한 문장으로, `action`에는 바꾼 방식을 적는다. 바뀌기 전 값은 `pace.history`에 `{at, read, evidence}`로 쌓는다. 학습자에게 맞았던 방식은 `preferences`에 남긴다.
+판단이 바뀌면 `learner/state.json`의 `pace`를 고친다. `read`는 `flow`, `too_fast`, `needs_more`, `bored_or_ready`, `stuck` 중 하나다(처음 값 `unknown`은 판단 전을 뜻한다). `evidence`에는 그렇게 본 근거를 한 문장으로, `action`에는 그 판단 뒤 실제로 바꾼 수(예: 빠른 확인 제안, 상위 난도 탐침)를 적고 대응을 바꿀 때마다 고친다. 바뀌기 전 값은(처음 `unknown`에서 바뀔 때도) `pace.history`에 `{at, read, evidence}`로 쌓는다. 학습자에게 맞았던 방식은 `preferences`에 남긴다.
